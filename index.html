@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header class="absolute left-0 top-0 w-full z-[9999]">
+        <!-- top header start -->
+        <div class="top-header flex items-center justify-between py-3 border-b border-b-[#ae7d54]">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+                <div class="icon flex items-center gap-3 ">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-white group">
+                        <i
+                            class="fa-brands fa-facebook-f text-white  group-hover:text-[rgba(170,132,83,1)] transition-all duration-300 ease-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-white group">
+                        <i
+                            class="fa-brands fa-instagram text-white group-hover:text-[rgba(170,132,83,1)] transition-all duration-300 ease-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-white group">
+                        <i
+                            class="fa-brands fa-linkedin-in text-white group-hover:text-[rgba(170,132,83,1)] transition-all duration-300 ease-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-white group">
+                        <i
+                            class="fa-brands fa-x-twitter text-white group-hover:text-[rgba(170,132,83,1)] transition-all duration-300 ease-in"></i>
+                    </a>
+
+                </div>
+                <div class="contact-info flex items-center gap-3">
+                    <div class="phone flex items-center gap-1 text-white justify-center group">
+                        <i class="fa-solid fa-envelope text-[16px] text-[#ae7d54]"></i>
+                        <span
+                            class="text-[12px] leading-4 font-normal group-hover:text-[#ae7d54] duration-300 transition-all ease-in">
+                            needhelp@company.com</span>
+                    </div>
+                    <div class="phone flex items-center gap-1 text-white justify-center group">
+                        <i class="fa-solid fa-location-dot text-[16px] text-[#ae7d54]"></i>
+                        <span
+                            class="text-[12px] leading-4 font-normal group-hover:text-[#ae7d54] duration-300 transition-all ease-in">
+                            needhelp@company.com</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- bottom header start -->
+        <div class="bottom-header py-3  mt-1">
+            <div class="container mx-auto px-4 flex items-center justify-between">
+
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="#" class="text-2xl font-extrabold text-black max-w-[150px] block">
+                        <img src="./image/logo-image.png" alt="logo-image">
+                    </a>
+                </div>
+
+                <!-- MENU -->
+                <nav class="hidden lg:block">
+                    <ul class="flex items-center gap-8 font-medium text-black text-white">
+                        <li><a href="#" class="text-[#ae7d54] transition-all duration-300 ease-in ">Home</a></li>
+                        <li><a href="#" class="hover:text-[#ae7d54] transition-all duration-300 ease-in">About</a></li>
+                        <li><a href="#" class="hover:text-[#ae7d54] transition-all duration-300 ease-in">Tours</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#ae7d54] transition-all duration-300 ease-in">Destinations</a></li>
+                        <li><a href="#" class="hover:text-[#ae7d54] transition-all duration-300 ease-in">Gallery</a>
+                        </li>
+                        <li><a href="#" class="hover:text-[#ae7d54] transition-all duration-300 ease-in">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <!-- ICON BOX -->
+                <div class="icon flex items-center gap-3 ">
+                    <span href="#" class="w-10 h-10 flex items-center justify-center text-white group cursor-pointer">
+                        <i
+                            class="fa-solid fa-magnifying-glass text-[#ae7d54]  group-hover:text-white transition-all duration-300 ease-in"></i>
+                    </span>
+                    <span href="#" class="w-10 h-10 flex items-center justify-center text-white group cursor-pointer">
+                        <i
+                            class="fa-solid fa-cart-shopping text-[#ae7d54] group-hover:text-white  transition-all duration-300 ease-in"></i>
+                    </span>
+                    <span href="#" class="w-10 h-10 flex items-center justify-center text-white group cursor-pointer">
+                        <i
+                            class="fa-solid fa-bars text-[#ae7d54] group-hover:text-white  transition-all duration-300 ease-in"></i>
+                    </span>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="banner relative pt-[144px]">
+        <div class="bg bg-image absolute left-0 top-0 w-full h-full bg-no-repeat bg-center bg-cover z-1"
+            style="background-image: url(./image/banner-image-1.jpg);"></div>
+
+        <div class="container mx-auto px-4 pt-[150px] relative z-10 pb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2  items-center">
+
+                <!-- CONTENT COLUMN -->
+                <div class="text-left">
+
+                    <!-- OFFER TEXT -->
+                    <div class="flex items-center gap-3 text-white mb-4">
+
+                        <!-- STAR RATING -->
+                        <div class="flex items-center gap-1 text-[#ae7d54]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <span class="text-[14px] uppercase font-medium tracking-[7px]">
+                            1000+ happy clients
+                        </span>
+                    </div>
+
+                    <!-- TITLE -->
+                    <h1 class="text-white text-[42px] lg:text-[72px] leading-tight font-semibold mb-6 heading-font">
+                        Book Now Best Luxury Hotel In the world.
+                    </h1>
+
+                    <!-- DESCRIPTION -->
+                    <p class="text-white/80 text-base leading-relaxed mb-8">
+                        Experience unparalleled comfort and luxury with our carefully curated
+                        collection of hotels, crafted to ensure an unforgettable stay from
+                        world-class hospitality and premium services.
+                    </p>
+
+                    <!-- BUTTON + CONTACT -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+
+                        <!-- BUTTON -->
+                        <a href="#" class="inline-flex items-center rounded-[35px] justify-center px-8 py-4
+                      border border-[#ae7d54] text-white font-semibold
+                         transition-all duration-300 ">
+                            BOOK NOW
+                        </a>
+
+                        <!-- CONTACT INFO -->
+                        <div class="flex items-center gap-2">
+
+                            <div class="w-12 h-12 flex items-center justify-center
+                                   text-white">
+                                <i class="fa-solid fa-headset text-[30px]"></i>
+                            </div>
+
+                            <div class="text-white">
+                                <span class="text-sm uppercase tracking-wide">
+                                    Book Now
+                                </span>
+                                <h4 class="text-lg font-semibold">
+                                    000 000 2222
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10 py-10 border-t border-white">
+
+                <!-- Feature Item -->
+                <div class="flex  items-center text-center gap-3 border-r border-white ">
+                    <div class="w-8 flex items-center justify-center">
+                        <img src="image/banner-icon/imgi_1_icon-fitness-center.png" alt="Fitness Center"
+                            class="w-full h-full object-contain">
+                    </div>
+                    <h6 class="text-white text-[20px] font-semibold heading-font leading-6">
+                        Fitness Center
+                    </h6>
+                </div>
+
+                <!-- Feature Item -->
+                <div class="flex  items-center text-center gap-3 justify-center  lg:border-r border-white">
+                    <div class="w-8 flex items-center justify-center">
+                        <img src="image/banner-icon/imgi_1_icon-swimming1.png" alt="Swimming Pool"
+                            class="w-full h-full object-contain">
+                    </div>
+                    <h6 class="text-white text-[20px] font-semibold heading-font leading-6">
+                        Swimming Pool
+                    </h6>
+                </div>
+
+                <!-- Feature Item -->
+                <div class="flex  items-center text-center gap-3 justify-center border-r border-white">
+                    <div class="w-8 flex items-center justify-center">
+                        <img src="image/banner-icon/imgi_1_icon-wifi1.png" alt="Free Wifi" class="w-full h-full object-contain">
+                    </div>
+                    <h6 class="text-white text-[20px] font-semibold heading-font leading-6">
+                        Free WIFI
+                    </h6>
+                </div>
+
+                <!-- Feature Item -->
+                <div class="flex  items-center text-center gap-3 justify-end">
+                    <div class="w-8 flex items-center justify-center">
+                        <img src="image/banner-icon/imgi_1_icon-restaurant1.png" alt="Restaurant"
+                            class="w-full h-full object-contain">
+                    </div>
+                    <h6 class="text-white text-[20px] font-semibold heading-font leading-6">
+                        Restaurant Centre
+                    </h6>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <main>
+
+        <section id="hero"
+            class="relative h-[700px] w-full bg-[url('image/hotel-image-1.jpg')] bg-cover bg-center transition-all duration-500 flex items-center ">
+
+            <!-- overlay -->
+            <div class="absolute inset-0 bg-black/50"></div>
+
+            <!-- TEXT SLIDER -->
+            <div class="slider swiper textSwiper relative z-10  w-full h-[700px]">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg1">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg2">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg1">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg2">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg1">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg2">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relativen  group"
+                        data-bg="bg1">
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide  transition-all cursor-pointer border-l border-l-white relative  group"
+                        data-bg="bg2">
+                        <!-- Content wrapper positioned at the bottom -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] group-hover:opacity-0 group-hover:invisible transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                Minimalism
+                            </h3>
+                        </div>
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full pt-[45px] px-[50px] pb-[35px] bg-[rgba(170,132,83,0.53)] transition-all duration-300 ease-in invisible opacity-0 translate-y-[100%] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                            <div class="category text-xs uppercase tracking-[0.2em] text-white font-medium ">
+                                Furniture
+                            </div>
+
+                            <h3 class="title text-3xl font-semibold text-white">
+                                <a href="#"> Minimalism</a>
+
+                            </h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer></footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+    integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
